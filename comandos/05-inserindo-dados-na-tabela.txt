@@ -1,0 +1,31 @@
+use cadastro;
+
+insert into pessoas
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+('Godofredo', '1984-01-02', 'M', '78.5', '1.83', 'Brasil');
+
+select * from pessoas;
+
+-------------------------------------------------------------------------
+
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+(DEFAULT, 'Creuza', '1920-12-20', 'F', '50.2', '1.65', DEFAULT);
+
+--------------------------------------------------------------------------
+
+insert into pessoas values
+(DEFAULT, 'Adalgiza', '1930-11-02', 'F', '63.2', '1.75', 'Irlanda');
+
+select * from pessoas;
+
+--------------------------------------------------------------------------
+
+insert into pessoas values
+(DEFAULT, 'Claudio', '1930-11-02', 'M', '63.2', '1.75', 'Brasil'),
+(default, 'Pedro', '1930-11-02', 'M', '63.2', '2', default),
+(DEFAULT, 'Ana', '1930-11-02', 'F', '63.2', '1.75', 'EUA');
+
+select * from pessoas;
